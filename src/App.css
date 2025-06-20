@@ -469,6 +469,39 @@ body {
   margin: 0;
 }
 
+/* Mobile subscribe button styling */
+.mobile-subscribe-button {
+  display: none;
+  background-color: #ff0000;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.mobile-subscribe-button .youtube-icon-small {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+/* Display conditional based on screen size */
+@media (max-width: 768px) {
+  .g-ytsubscribe.desktop-only {
+    display: none;
+  }
+  
+  .mobile-subscribe-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .container {

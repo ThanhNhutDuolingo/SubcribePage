@@ -205,24 +205,12 @@ export default function App() {
               <CardDescription>Click the YouTube subscribe button below to get started</CardDescription>
             </CardHeader>
             <CardContent className="subscribe-content">
-              {/* Add the standard YouTube button for desktop */}
               <div
-                className="g-ytsubscribe desktop-only"
+                className="g-ytsubscribe"
                 data-channelid="UCNBSdTuTvd3YyD8H3VAgUfA"
                 data-layout="full"
                 data-count="default"
               ></div>
-              
-              {/* Add direct link for mobile fallback */}
-              <a 
-                href="https://www.youtube.com/channel/UCNBSdTuTvd3YyD8H3VAgUfA?sub_confirmation=1" 
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mobile-subscribe-button"
-              >
-                <Youtube className="youtube-icon-small" />
-                Subscribe to Channel
-              </a>
             </CardContent>
           </Card>
         )}
